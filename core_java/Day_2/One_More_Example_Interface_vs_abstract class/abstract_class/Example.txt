@@ -1,0 +1,36 @@
+public abstract class Person
+{
+	public void perform_Physical_Activities()
+	{
+		// day_to_day physical activities 
+		e.g. walk,talk,sleep,eat etc.
+	}
+	public abstract perform_Role_based_Activities();
+}
+class Employee extends Person
+{
+	// inherits perform_Physical_Activities() method...
+		
+	public perform_Role_based_Activities()
+	{
+		perform the role of an employee....
+	}
+}
+class Student extends Person
+{
+	// inherits perform_Physical_Activities() method...
+		
+	public perform_Role_based_Activities()
+	{
+		perform the role of student....
+	}
+}
+class HouseWife extends Person
+{
+	// inherits perform_Physical_Activities() method...
+		
+	public perform_Role_based_Activities()
+	{
+		perform the role of HouseWife
+	}
+}

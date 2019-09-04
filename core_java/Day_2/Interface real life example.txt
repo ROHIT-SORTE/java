@@ -1,0 +1,62 @@
+	class BookingObject{}
+
+	interface FlightOpeartions
+	{
+		 void getAllAvailableFlights();
+		 void booking(BookingObject bookingObj);
+	}
+
+	
+		BritishAirways.java (Vendor 1) 
+
+	class BritishAirways implements FlightOpeartions
+	{
+ 
+		 public void getAllAvailableFlights()
+		 {
+         	  //get british airways flights details.
+ 		 }
+ 
+ 		public void booking(BookingObject flightDetails)
+		{  
+          		//place booking order for a flight.
+ 		}
+ 
+	}
+
+		Emirates.java (Vendor 2) 
+
+	class Emirates implements FlightOpeartions
+	{
+		 public void getAllAvailableFlights()
+		 {
+         		//get Emirates flights details.
+ 		  }
+ 
+ 		public void booking(BookingObject flightDetails)
+                {  
+    		     //place booking order 
+ 		}
+	}
+
+
+Travel Services
+
+	makemytrip.com or expedia.com
+
+will interact with
+
+	FlightOperations
+		which will allow us to indirectly interact with a  particular vendor i.e. BritishAirways or Emirates.
+
+i.e.
+
+	void perform(FlightOperations operations)
+	{
+		operations.getAvailableFlights();
+		operations.booking(new BookingObject(booking_details));
+	}
+
+
+thus our Travel service is loosely coupled with a specific Airways Vendor.
+

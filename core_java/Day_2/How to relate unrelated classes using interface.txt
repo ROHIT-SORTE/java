@@ -1,0 +1,86 @@
+	Polymorphism with base class
+
+class FourWheeler
+{
+	start(){}
+}
+class Car extends FourWheeler
+{
+	start(){}
+}
+class Bus extends FourWheeler
+{
+	start(){}
+}
+
+void perform(FourWheeler ref)
+{
+	ref.start();
+}
+
+
+
+
+
+
+interface Flying 
+{
+void fly();
+}	
+
+class Aeroplane extends Vehicle implements Flying
+{
+	void fly(){.....}
+}
+
+class Bird extends Animal implements Flying
+{
+void fly(){.....}
+
+}
+
+class Superman extends Person implements Flying
+{
+void fly(){.....}
+}
+
+
+void perform(Flying ref)
+{
+	ref.fly();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
